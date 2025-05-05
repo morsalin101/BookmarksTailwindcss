@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Tailwind BookMark</title>
+
+</head>
+<body class=" bg-gray-200 p-5 font-['Rubik']">
+  
+   
+
+  <div class="container mx-auto p-5">
+
+    <nav class="flex max-w-5xl mx-auto items-center justify-between">
+        <div class="flex justify-between w-full items-center">
+              <img src="assests/logo-bookmark.svg"  alt="">
+            <ul class="hidden lg:flex gap-10 uppercase items-center">
+                <li><a class="hover:text-red-400" href="#">Features</a></li>
+                <li><a class="hover:text-red-400" href="#">Pricing</a></li>
+                <li><a class="hover:text-red-400" href="#">Contact</a></li>
+                <button class="bg-red-400 text-white rounded px-6 py-1 hover:bg-white hover:text-red-400 hover:border">Login</button>
+            </ul>
+            <img src="assests/icon-hamburger.svg" id="hamburgerBtn" class="lg:hidden cursor-pointer" alt="hamburger menu">
+        </div>
+
+
+        <div id="mobileMenu" class="fixed hidden p-5 inset-0 gap-10 flex flex-col bg-[#102E50] opacity-75 z-10">
+            <div class="flex justify-between items-center">
+              <img src="assests/logo-bookmark.svg" class="" alt="">
+              <img src="assests/icon-close.svg" id="closeBtn" class="cursor-pointer" alt="close menu">
+            </div>
+            <ul class="flex flex-col text-white gap-10 uppercase items-center divide-y divide-gray-400 divide-[0.5px]">
+              <li class="w-fit"><a class="hover:text-red-400" href="#">Features</a></li>
+              <li><a class="hover:text-red-400" href="#">Pricing</a></li>
+              <li><a class="hover:text-red-400" href="#">Contact</a></li>
+              <button class="w-full bg-transparent border-2 border-white font-bold text-white rounded px-6 py-1 hover:bg-white hover:text-red-400 hover:border">Login</button>
+            </ul>
+            <div class="flex justify-center items-center mt-auto pb-5"> <div class="flex gap-6 justify-center items-center">
+                <i class="fab fa-facebook-f text-white text-2xl hover:text-red-400"></i>
+                <i class="fab fa-twitter text-white text-2xl hover:text-red-400"></i>
+              </div>
+            </div>
+           </div>
+    </nav>
+
+  <!-- hero -->
+
+   <div class="flex flex-col mt-10 lg:flex-row-reverse gap-10 max-w-5xl mx-auto lg:mt-20">
+  
+    <!-- <div class="lg:absolute lg:top-30  lg:right-0 lg:rounded-l-full  lg:w-2/5 h-[300px] lg:bg-blue-600 ">
+    </div> -->
+
+    <div class="p-2 bg-gray-800  lg:w-1/2 rounded-xl">
+        <img src="assests/illustration-features-tab-1.svg" class="" alt="">
+    </div>
+    <div class="flex flex-col gap-6 lg:gap-10 lg:w-1/2">
+        <h1 class="text-3xl text-center lg:text-start lg:text-5xl lg:font-semibold text-gray-800">A Simple Bookmark Manager</h1>
+        <p class="text-gray-500 text-center lg:text-start">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+      <div class="flex gap-5 mt-auto">
+        <button class="hover:bg-white hover:border hover:border-blue-500 hover:shadow hover:text-gray-800 text-white text-xm bg-blue-600 p-2 rounded">Get it on Chrome</button>
+        <button class="text-gray-500 hover:bg-white hover:border hover:border-gray-300 hover:text-gray-800 border-blue-500 shadow text-sm  p-2 rounded">Get it on Firefox</button>
+      </div>
+
+    </div>
+
+   </div>
+
+    <!-- Features  -->
+
+   <div class="flex text-center flex-col lg:w-5/12 mx-auto px-2 lg:mt-20  mt-10 gap-6 items-center justify-center">
+       <h1 class="font-semibold text-xl">Features</h1>
+       <p class="text-gray-500 text-sm">Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p> 
+       <div class="lg:flex-row gap-4 lg:gap-20 text-gray-500 flex flex-col">
+          <h1 class="transition duration-300 hover:border-b-2 hover:border-red-400 border-gray-300">Simple BookMarking</h1>
+          <h1 class="transition duration-300 hover:border-b-2 hover:border-red-400 border-b-2 border-gray-300">Speedy Searching</h1>
+          <h1 class="transition duration-300 hover:border-b-2 hover:border-red-400 border-b-2 border-gray-300">Easy Sharing</h1>
+       </div>
+    </div>
+
+   <div class="flex flex-col mt-10 lg:flex-row gap-10 max-w-5xl mx-auto lg:mt-20">
+  
+    <!-- <div class="lg:absolute lg:top-30  lg:right-0 lg:rounded-l-full  lg:w-2/5 h-[300px] lg:bg-blue-600 ">
+    </div> -->
+    <div class="p-2 bg-gray-800  lg:w-1/2 rounded-xl">
+        <img src="assests/illustration-features-tab-1.svg" class="" alt="">
+    </div>
+    <div class="flex p-10 flex-col gap-6 lg:w-1/2">
+
+        <h1 class="text-3xl text-center lg:text-start lg:text-4xl lg:font-semibold text-gray-800">BookMark in one click</h1>
+        <p class="text-gray-500 text-center lg:text-start">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+      <div class="lg:flex mt-auto hidden">
+        <button class="hover:bg-white hover:border hover:border-blue-500 hover:shadow hover:text-gray-800 text-white text-xm bg-blue-600 p-2 rounded">More Info</button>
+        
+      </div>
+      
+
+    </div>
+    
+
+   </div>
+
+  </div>
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('closeBtn');
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
